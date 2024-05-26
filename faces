@@ -1,0 +1,20 @@
+# 1 - Implement a function called 'convert'
+# 2 - 'Convert' needs to accept a str as input & return the same input with any :) converted to emoji
+# 3 - also any :( with a sad face emoji
+# 4 - All other text should be returned unchanged
+# 5 - Create a function called 'main' that prompts the user for input
+#     it should call 'convert' on that input, and print the results
+# 6 - 'main' needs to be called at the bottom of the file
+
+def main():
+    statement = input("Enter your sentence: ")
+    print(statement)
+    statement = convert(statement)
+    print(statement)
+
+def convert (statement):
+    statement = statement.replace(":)", "🙂")
+    statement = statement.replace(":(", "🙁")
+    return statement
+
+main()
