@@ -1,0 +1,14 @@
+# Create a program in Python that prompts the user for input &
+# Outputs the same input in lowercase.
+# Punctuations & Whitespace should be outputted unchanged.
+
+#Test1 code with "HELLO" output = "hello"
+#Test2 code with "THIS IS CS50" output = "this is cs50"
+#Test3 code with "50" output = "50"
+
+message = input()
+
+# lowercase all the inputted information
+print(message.lower())
+
+# if correct the output, regardless of length and content, should be ALL lowercase
