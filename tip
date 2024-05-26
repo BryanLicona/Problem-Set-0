@@ -1,0 +1,24 @@
+# Implement two functions:
+# dollars_to_float should accept a 'str' as input (formated $##.##)
+# each # is a decimal digit
+# remove the leading $
+# return the amount as a float ( ex. input $50.00, output 50.0)
+# percent_to_float should accept a 'str' as input (formated ##%)
+# each # is a decimal digit
+# remove the trailing %
+# return the percentage as a float ( ex. input 15%, output 0.15)
+
+def main():
+    dollars = dollars_to_float(input("How much was the meal? "))
+    percent = percent_to_float(input("What percentage would you like to tip? "))
+    tip = dollars * percent/100
+    print(f"Leave ${tip:.2f}")
+
+def dollars_to_float(d):
+        return float(d.strip('$%'))
+
+def percent_to_float(p):
+    str.rstrip(p)
+    return float(p.strip('$%'))
+
+main()
