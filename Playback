@@ -1,0 +1,6 @@
+#Prompt user for input
+#Output should be exact but the blank spaces should be replaced with "..." (No quotations)
+
+text = input()
+
+print(text.replace(" ", "..."))
